@@ -13,7 +13,7 @@ else:
     last_digit = (num % 10)
 
 if last_digit % 10 == 0:
-    print(f"last digit of {num} is {0} and is 0")
+    print("last digit of {} is {} and is 0".format(number, result))
 elif last_digit > 5:
     print(f"last digit of {num} is {last_digit} and is greater than 5")
 else:
