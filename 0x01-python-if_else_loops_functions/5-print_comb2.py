@@ -8,4 +8,4 @@ for num in range(0, 100):
     if num < 99:
         print("{}, ".format(number), end="")
     else:
-        print("{}".format(number)) #dealing with 99'
+        print("{}".format(number))
