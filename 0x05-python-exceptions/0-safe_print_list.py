@@ -2,10 +2,10 @@
 
 def safe_print_list(my_list=[], x=0):
     count = 0
-    for i in range(x):  # x rep the number of element to print
+    for i in range(x):
         try:
             print("{}".format(my_list[i]), end="")
-        except IndexError:  # x can be bigger than the length of my_list
+        except IndexError:
             break
         else:
             count += 1
