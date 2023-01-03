@@ -3,18 +3,27 @@
 
 
 class Square:
-    """intializing the class attribute"""
+    """A class of Squaree"""
+
     def __init__(self, size=0):
-        self.__size = size
-    """bundling variable size with function and
-        retrive variable size"""
+        """intializing class Square
+        Arg:
+            size: size of the sqaure
+        Raise:
+            TypeError: if size is not interger
+            ValueError: if size is less than zero
+        """
+
+        self.size = size
+
     @property
     def size(self):
+        """retrieve size attribute"""
         return self.__size
 
-    """And set it according to the value"""
     @size.setter
     def size(self, value):
+        """sets size attributes"""
         if(type(value) is not int):
             raise TypeError("size must be an interger")
         elif(value < 0):
@@ -22,4 +31,5 @@ class Square:
         self.__size = value
 
     def area(self):
+        """Returns area of the square"""
         return self.__size ** 2
