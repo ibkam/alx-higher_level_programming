@@ -6,11 +6,11 @@ class Rectangle:
     """this represent a rectangle"""
 
     def __init__(self, width=0, height=0):
-        """intializing rectangle class
-        args:
-            width: represents the rectangle width
-            height: represent the rectangle height
-        raises:
+        """Intializing rectangle class
+        Args:
+            width: represents the width of the rectangle
+            height: represent the height of the rectangle
+        Raises:
             TypeError: if size is not an interger
             ValueError: if size is less than zero
         """
