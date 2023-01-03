@@ -20,7 +20,7 @@ class Square:
     def size(self, value):
         if (type(value) is not int):
             raise TypeError("size must be interger")
-        elif ( value < 0):
+        elif (value < 0):
             raise ValueError("size mustbe >= 0")
         self.__size = value
 
@@ -35,7 +35,7 @@ class Square:
         elif((value[0]) < 0) or (value[1] < 0):
             raise TypeError("position must be atuple of 2 positive intergers")
         self.__position = value
-        
+
     def area(self):
         return self.__size ** 2
 
