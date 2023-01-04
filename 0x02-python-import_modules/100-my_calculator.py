@@ -3,27 +3,17 @@
 if __name__ == "__main__":
     """Handle basic arithmetic operations."""
     from calculator_1 import add, sub, mul, div
-    from sys import argv, exit
+    import sys
+
+    if len(sys.argv) - 1 != 3:
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
+        sys.exit(1)
 
     ops = {"+": add, "-": sub, "*": mul, "/": div}
-
-    if len(argv) - 1 != 3:
-        print("usage: ./100-my_calculator.py <a> <operator> <b>")
-        sys.exit(1)
-    elif argv[2] not in ops:
+    if sys.argv[2] not in list(ops.keys()):
         print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
-    else:
-        """converting input parameters to intergers"""
-        a = int(argv[1])
-        b = int(argv[3])
 
-        """handling  basic operators"""
-        if argv[2] == "+":
-            print("{} + {} = {}".format(a, b, add(a, b)))
-        elif argv[2] == "-":
-            print("{} - {} = {}".format(a, b, sub(a, b)))
-        elif argv[2] == "*":
-            print("{} * {} = {}".format(a, b, mul(a, b)))
-        elif argv[2] == "/":
-            print("{} / {} = {}".format(a, b, div(a, b)))
+    a = int(sys.argv[1])
+    b = int(sys.argv[3])
+    print("{} {} {} = {}".format(a, sys.argv[2], b, ops[sys.argv[2]](a, b)))
