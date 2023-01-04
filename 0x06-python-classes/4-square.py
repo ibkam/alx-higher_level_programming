@@ -13,8 +13,12 @@ class Square:
             TypeError: if size is not interger
             ValueError: if size is less than zero
         """
+        if not isinstance(size, int):
+            raise TypeError("size must be an interger")
+        if size < 0:
+            raise ValueError("size must be >= 0")
 
-        self.size = size
+        self.__size = size
 
     @property
     def size(self):
