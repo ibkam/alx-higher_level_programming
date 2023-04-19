@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-class BaseGemometry
+A class BaseGemometry
 """
 
 
