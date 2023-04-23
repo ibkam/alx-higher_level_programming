@@ -11,5 +11,5 @@ def append_write(filename="", text=""):
 
     Returns: the number of characters
     """
-    with open(filename, "w", encoding="utf-8") as myFile:
+    with open(filename, "a", encoding="utf-8") as myFile:
         return myFile.write(text)
