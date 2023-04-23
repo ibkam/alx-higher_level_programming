@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Writes a string to a text file and return the no. of character written"""
 
+
 def write_file(filename="", text=""):
     """returns the number of character written
 
