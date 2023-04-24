@@ -31,7 +31,6 @@ class Student:
     
     def reload_from_json(self, json):
         """Replace all attribute of a student
-        
         Args:
             json (dict): The key/value pairs to replace attributes with.
         """
