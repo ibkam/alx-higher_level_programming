@@ -4,10 +4,8 @@
 
 class Student():
     """Rep a student"""
-    
     def __init__(self, first_name, last_name, age):
         """Intialize a new Student
-        
         Args:
             @first_name: the first name
             @second_name: the second name
