@@ -18,5 +18,5 @@ class Student():
         self.last_name = last_name
         self.age = age
         
-    def t-_json(self):
+    def to_json(self):
         return self.__dict__
