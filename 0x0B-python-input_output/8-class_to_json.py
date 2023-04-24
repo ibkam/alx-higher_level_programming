@@ -3,10 +3,9 @@
 
 
 def class_to_json(obj):
-  """returns dictionary description
-  Args:
-      @obj: object passed
-      
-  Returns: the dict in data structure
-  """
-  return obj.__dict__
+    """returns dictionary description
+    Args:
+        @obj: object passed
+    Returns: the dict in data structure
+    """
+    return obj.__dict__
