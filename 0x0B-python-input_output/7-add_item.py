@@ -2,7 +2,7 @@
 """module: function"""
 
 import sys
-if__name__ = "__main__":
+if__name__ == "__main__":
     save_json = __import__("5-save_to_json").save_to_json_file
     load_json = __import__("6-load_from_json").load_to_json_file
 
