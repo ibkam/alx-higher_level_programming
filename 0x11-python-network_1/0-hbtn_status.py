@@ -2,7 +2,7 @@
 """ fetches https://alx-intranet.hbtn.io/status"""
 from urllib import request
 
-if__name__ = "__main__":
+if __name__ =+ "__main__":
 	with request.urlopen("https://alx-intranet.hbtn.io/status") as response:
 		response = response.read()
 		print("Body response:")
