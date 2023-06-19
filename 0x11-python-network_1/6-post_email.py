@@ -6,9 +6,8 @@ the body of the response.
 import sys
 import requests
 
-if __name__ == "__main__"
-url = sys.agrv[1]
-value = {"email:" sys.argv[2]}
-
-request = requests.post(url, data=value)
-print(request.text)
+if __name__ == "__main__":
+    url = sys.argv[1]
+    email = sys.argv[2]
+    request = requests.post(url, data={'email': email})
+    print(request.text)
