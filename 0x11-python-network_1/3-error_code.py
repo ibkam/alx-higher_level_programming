@@ -8,7 +8,6 @@ exceptions and print: Error code: followed by the HTTP status code
 import sys
 import urllib.request
 import urllib.error
-
 url = sys.argv[1]
 request = urllib.request.Request(url)
 
