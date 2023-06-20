@@ -1,4 +1,4 @@
-#!/usr/bi/node
+#!/usr/bin/node
 //  prints two arguments passed to it, in the following format: “ is ”
 const { argv } = require('process');
 const argv1 = argv[2];
