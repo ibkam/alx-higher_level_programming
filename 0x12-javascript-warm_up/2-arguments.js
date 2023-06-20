@@ -1,13 +1,11 @@
 #!/usr/bin/node
 //  prints a message depending of the number of arguments passed:
 const process = require('process');
-const argv  = process.argv;
-if (agrv.length === 2) {
+const args = process.argv;
+if (args.length === 2) {
   console.log('No argument');
-}
-else if (agrv.length < 4) {
+} else if (args.length < 4) {
   console.log('Argument found');
-}
-else {
+} else {
   console.log('Arguments found');
 }
