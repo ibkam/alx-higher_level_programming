@@ -3,7 +3,7 @@
 const { argv } = require('process');
 const a = Number(argv[2]);
 const b = Number(argv[3]);
-const sum = 0;
+let sum = 0;
 
 function add (a, b) {
   console.log(sum = a + b);
