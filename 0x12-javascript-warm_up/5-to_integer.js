@@ -5,5 +5,5 @@ const convert = Number(argv[2]);
 if (isNaN(convert)) {
     console.log('Not a number');
 } else {
-  console.log(`My number: ${converted}`););
+  console.log(`My number: ${converted}`);
 }
