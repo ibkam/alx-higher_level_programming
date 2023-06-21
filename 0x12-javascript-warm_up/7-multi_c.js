@@ -3,7 +3,7 @@
 const { argv } = require('process');
 const occurence = Number(argv[2]);
 
-if (!occurence)? {
+if (!occurence) {
   console.log('Missing number of occurrences');
 } else {
   for ( let i = 0; i < occurence; i++) {
