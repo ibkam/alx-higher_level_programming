@@ -6,5 +6,6 @@ const b = Number(argv[3]);
 let sum = 0;
 function add (a, b) {
   sum = (a + b);
+  console.log(sum);
 }
-console.log(add(a, b));
+add(a, b);
