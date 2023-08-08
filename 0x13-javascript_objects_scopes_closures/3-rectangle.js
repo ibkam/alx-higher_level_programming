@@ -2,7 +2,7 @@
 // a class rectangle that defines a rectangle
 module.export = class Rectangle {
   constructor (w, h) {
-    if (w > 0 && h > 0) { [this.width, this.height] = [w, h]}
+    if (w > 0 && h > 0) { [this.width, this.height] = [w, h];}
   }
 
   print () {
@@ -10,4 +10,4 @@ module.export = class Rectangle {
       console.log('X'.repeat(this.height));
     }
   }
-}
+};
