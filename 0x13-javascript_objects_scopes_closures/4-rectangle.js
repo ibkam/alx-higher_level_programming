@@ -12,7 +12,7 @@ module.exports = class rectangle {
 	}
 
 	rotate () {
-		[this.height, this.width] = [this.height, this.width]
+		[this.height, this.width] = [this.width, this.height]
 	}
 
 	double () {
