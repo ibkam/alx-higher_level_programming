@@ -14,5 +14,5 @@ module.exports = class Rectangle {
       console.log(s);
     }
   }
-}
+};
 module.exports = class Rectangle
