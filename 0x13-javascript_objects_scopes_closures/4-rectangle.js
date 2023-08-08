@@ -19,4 +19,3 @@ module.exports = class rectangle {
 		this.width =* 2;
 		this.height =* 2
 	};
-	
