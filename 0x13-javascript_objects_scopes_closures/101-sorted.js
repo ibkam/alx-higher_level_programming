@@ -6,7 +6,7 @@ const newdict = {};
 for (const value in dict) {
   const occurrence = dict[key];
   if (newdict[dict[key]] === undefined) {
-    newdict[occurrence] = [];
+    newdict[dict[key]] = [key];
   }
   newdict[occurrence].push(value);
 }
