@@ -3,7 +3,7 @@ const dict = require('./101-data');
 const newDict = {};
 
 for (const value in dict) {
-  const occurrences = data[value];
+  const occurrences = dict[value];
   if (!newDict[occurrences]) {
     newDict[occurrences] = [];
   }
