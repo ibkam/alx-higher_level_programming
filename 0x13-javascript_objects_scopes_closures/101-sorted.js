@@ -8,6 +8,6 @@ for (const value in dict) {
   if (newdict[dict[key]] === undefined) {
     newdict[dict[key]] = [key];
   }
-  newdict[occurrence].push(value);
+  newdict[key].push(value);
 }
 console.log(newdict);
