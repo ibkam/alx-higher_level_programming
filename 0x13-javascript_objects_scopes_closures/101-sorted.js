@@ -7,6 +7,6 @@ for (const value in dict) {
   if (!newDict[occurrences]) {
     newDict[occurrences] = [];
   }
-  newDict[occurrences].push(userId);
+  newDict[occurrences].push(value);
 }
 console.log( newDict[occurrences]);
