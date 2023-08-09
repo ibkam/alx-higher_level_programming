@@ -1,4 +1,4 @@
-lse {#!/usr/bin/node
+#!/usr/bin/node
 //  script that imports a dictionary of occurrences by user id
 const dict = requires('./101-data.js');
 const newdict = {};
