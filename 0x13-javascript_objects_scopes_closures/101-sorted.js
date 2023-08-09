@@ -1,12 +1,11 @@
 #!/usr/bin/node
-//  script that imports a dictionary of occurrences by user id
-const dict = requires('./101-data.js');
-const newdict = {};
-
+const dict = require('./101-data').dict;
+const newDict = {};
 for (const key in dict) {
-  if (!newdict[dict[key]] === undefined) {
-    newdict[dict[key]]= [key];
+  if (newDict[dict[key]] === undefined) {
+    newDict[dict[key]] = [key];
   } else {
-  newdict[key].push(value);
+    newDict[dict[key]].push(key);
+  }
 }
-console.log(newdict);
+console.log(newDict);
