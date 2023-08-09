@@ -3,10 +3,10 @@
 const dict = requires('./101-data.js');
 const newdict = {};
 
-for (const value in dict) {
+for (const key in dict) {
   const occurrence = dict[key];
-  if (newdict[dict[key]] === undefined) {
-    newdict[dict[key]] = [key];
+  if (!newdict[occurrence] ){
+    newdict[occurrence] = [];
   }
   newdict[key].push(value);
 }
