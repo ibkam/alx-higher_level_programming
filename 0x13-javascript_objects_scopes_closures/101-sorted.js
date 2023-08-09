@@ -4,9 +4,8 @@ const dict = requires('./101-data.js');
 const newdict = {};
 
 for (const key in dict) {
-  const occurrence = dict[key];
-  if (!newdict[occurrence] ){
-    newdict[occurrence] = [];
+  if (!newdict[dict[key]] === undefined) {
+    newdict[dict[key]]= [key];
   }
   newdict[key].push(value);
 }
