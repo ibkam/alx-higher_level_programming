@@ -1,6 +1,7 @@
-#!/usr/bin/npde
+#!/usr/bin/node
 // script that display the status code of a GET request.
 const request = require('request');
-request.get(process.argv[2].on('response', function (response) {
+const url = process.argv[2];
+request.get(url, function (response) {
   console.log(`code: ${response.statusCode}`)
 });
