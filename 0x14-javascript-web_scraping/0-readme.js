@@ -1,9 +1,9 @@
 #!/usr/bin/node
 // script that reads and prints the content of a file.
 const fs = require('fs');
-async function readfilecontent (filepath) {
+async function readFileContent (filepath) {
   try {
-    const content = await fs.promise.readfile(filepath, 'utf-8');
+    const content = await fs.promise.readFile(filepath, 'utf-8');
     console.log(content);
   } catch (error) {
     console.error('ENOENT: no such file or directory, open "doesntexist"', error);
