@@ -6,11 +6,11 @@ async function readfilecontent (filepath) {
     const content = await fs.promise.readfile(filepath, 'utf-8');
     console.log(content);
   } catch (error) {
-    console.error("ENOENT", "no such file or directory, open 'nop'", error);
+    console.error('ENOENT: no such file or directory, open "doesntexist"', error);
   }
 }
 if (process.argv.length < 3) {
-  console.error(error);
+  console.error('ENOENT: no such file or directory, open "doesntexist"', error);
 } else {
   const filepath = process.argv[2];
   readfilecontent(filepath);
