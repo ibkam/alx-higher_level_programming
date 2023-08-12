@@ -16,5 +16,5 @@ request(url, (error, body, response) => {
       completed[todo.userId] += 1;
     }
   });
-  console.log(completed)
+  console.log(completed);
 });
