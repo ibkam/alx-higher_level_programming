@@ -16,5 +16,5 @@ request.get(url, (error, response, body) => {
       movieCount++;
     }
   });
-  console.log(${movieCount});
-}
+  console.log(`${movieCount}`);
+};
