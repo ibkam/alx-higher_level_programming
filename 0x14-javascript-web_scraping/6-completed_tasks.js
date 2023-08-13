@@ -7,7 +7,7 @@ request(url, (error, body, response) => {
   if (error) {
     console.error(error);
   }
-  const todo = JSON.parse(body);
+  const todos = JSON.parse(body);
   const completed = {};
   todos.forEach((todo) => {
     if (todo.completed && completed[todo.userId] === undefined) {
