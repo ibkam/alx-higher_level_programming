@@ -15,7 +15,7 @@ request(url, (error, response, body) => {
     if (error) {
       console.error(error);
     } else {
-      console.log(${filePath})
+      console.log(`${filePath}`)
     }
   });
 });
