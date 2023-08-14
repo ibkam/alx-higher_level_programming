@@ -11,11 +11,11 @@ request(url, (error, response, body) => {
     console.error(error);
     return;
   }
-  fs.writeFile(filePath, body, { encoding: 'utf-8'}, error => {
+  fs.writeFile(filePath, body, { encoding: 'utf-8'} , error => {
     if (error) {
       console.error(error);
     } else {
-      console.log(`${filePath}`)
+      console.log(`${filePath}`);
     }
   });
 });
