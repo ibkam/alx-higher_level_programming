@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-
 def no_c(my_string):
-
     new_string = ""
-    for i in range(len(my_string) - 1):
-        if my_string[i] != "c" or my_string[i] != "C":
-            new_string += my_string[i]
-    return new_string
+    for i in range(len(my_string)):
+        if my_string[i] == "c" or my_string[i] == "C":
+            continue
+        else:
+            # concatenate each character of my_string to new_string
+            new_string = new_string + my_string[i]
+    return (new_string)
