@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """
-class 'Student'
+class Student
 """
 
 
-class student:
+class Student:
     """
     define class
     """
@@ -18,7 +18,7 @@ class student:
         self.last_name = last_name
         self.age = age
 
-        def to_json(self):
+    def to_json(self):
             """
             Retrieve a dictionary rep of the stdent
             """
