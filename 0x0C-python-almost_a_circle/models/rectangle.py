@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Define a rectnagle class
+Define a rectangle class
 """
 from base import Base
 
