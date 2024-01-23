@@ -97,6 +97,11 @@ class Rectangle(Base):
             [print("#", end="") for w in range(self.width)]
             print("")
 
+    def __str__(self):
+        """Return the print() and str() rep pf the rectangle"""
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(
+                self.id, self.x, self.y, self.width, self.height)
+
     def update(self, *args, **kwargs):
         """Update the Rectangle.
 
