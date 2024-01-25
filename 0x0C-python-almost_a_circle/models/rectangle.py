@@ -152,10 +152,10 @@ class Rectangle(Base):
         """
         Returns dictionary presentation of rectangle class
         """
-        return (
+        return {
                 "id": self.id,
                 "width": self.width,
                 "height": self.height,
                 "x": self.x,
                 "y": self.y
-                )
+                }
