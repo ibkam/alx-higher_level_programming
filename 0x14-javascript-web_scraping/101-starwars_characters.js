@@ -1,34 +1,36 @@
 #!/usr/bin/node
 
 const request = require('request');
+const id = process.argv[2];
+const url = `https://swapi-api.alx-tools.com/api/films/${id}`;
 
-// Function to fetch characters of a Star Wars movie by ID
-function getCharacters (movieId) {
+request.get(url, async (error, response, body) => {
+  if (error) {
+    console.log(error);
+  } else {
+    const content = JSON.parse(body);
+    const characters = content.characters;
+    
+    for (const character of characters) {
+      try {
+        const characterResponse = await getRequest(character);
+        console.log(JSON.parse(characterResponse).name);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+  }
+});
+
+// Function to make request and return a promise
+function getRequest(url) {
   return new Promise((resolve, reject) => {
-    const url = `https://swapi.dev/api/films/${movieId}/`;
-
-    request(url, (error, response, body) => {
+    request.get(url, (error, response, body) => {
       if (error) {
         reject(error);
       } else {
-        const film = JSON.parse(body);
-        const characters = film.characters;
-        resolve(characters);
+        resolve(body);
       }
     });
   });
-}
-
-// Function to get character name from URL
-function getCharacterName (characterUrl) {
-  return new Promise((resolve, reject) => {
-    request(characterUrl, (error, response, body) => {
-      if (error) {
-        reject(error);
-      } else {
-        const character = JSON.parse(body);
-        resolve(character.name);
-      }
-    });
-  });
-}
+}}
